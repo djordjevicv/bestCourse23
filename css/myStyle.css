@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --black: #0E143A;
+    --orange: #FFACBE;
+    --pink: #FD36F5;
+    --blue: #4BBAE3;
+    --yellow: #DBC88A;
+
+    --purple: #8640aa;
+    --purpleD1: #4b156a;
+
+    --white: #CDC7D1;
+
+    --gray: #1D1D1E;
+    --grayL1: #282829;
+    --grayL2: #313132;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: var(--gray);
+    color: var(--white);
+    scroll-behavior: smooth !important;
+    width: 100%;
+    margin: 0;
+}
+
+
+/*NAVIGATION*/
+.navbar {
+    background: var(--gray);
+    opacity: 1;
+    box-shadow: 1px 1px 1px 1px var(--purple);
+}
+
+.navbar>container {
+    position: relative;
+}
+
+.navbar-brand img {
+    width: 140px;
+    position: relative;
+}
+
+.navbar-toggler {
+    background: linear-gradient(45deg, var(--gray), var(--purple));
+}
+
+.navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.offcanvas-body {
+    opacity: 1;
+}
+
+.offcanvas.offcanvas-end {
+    background: linear-gradient(90deg, var(--gray), var(--purpleD1));
+    transition: all 0.35s;
+    width: 100vw;
+    opacity: 1;
+}
+
+.offcanvas-body .nav-item {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.offcanvas button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    transform: scale(2);
+}
+
+@media only screen and (max-width: 470px) {
+    .offcanvas-body .nav-item {
+        font-size: 3.8rem;
+        font-weight: 500;
+    }
+}
+
+
+/*HEADER*/
+header {
+    background: linear-gradient(25deg, var(--gray), var(--grayL));
+    min-height: 110vh;
+}
+
+header .h1 {
+    font-weight: 600;
+    font-size: 4.5em;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.8rem;
+    text-shadow: 1px 1px 2px var(--purpleD1);
+}
+
+header .h1>span {
+    font-weight: 800;
+    color: var(--purple);
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px var(--purpleD1);
+}
+
+@media only screen and (max-width: 1199px) {
+    header .h1 {
+        font-size: 3.7em;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    header .h1 {
+        font-size: 3.2em;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .offcanvas-body .nav-item {
+        font-size: 3.8rem;
+        font-weight: 500;
+    }
+
+    /*HEADER*/
+    header .h1 {
+        font-size: 2.3em;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+
+/*FOOTER*/
+footer {
+    background: var(--gray);
+}
+
+footer img {
+    width: 130px;
+}
+
+#BEST-logo {
+    width: 100px;
+}
+
+#social-icons i {
+    font-size: 1.25rem;
+    color: white;
+    transition: all 0.3s;
+}
+
+#social-icons i:hover {
+    scale: 0.8;
+}
