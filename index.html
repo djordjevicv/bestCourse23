@@ -7,8 +7,6 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Best Course 23</title>
-    <!-- Fonts -->
-
     <!-- Font Awesome Icons-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
@@ -39,13 +37,13 @@
                             data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         <ul class="navbar-nav justify-content-center flex-grow-1">
                             <li class="nav-item py-4">
-                                <a class="nav-link active text-center" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active text-center" aria-current="page" href="">Home</a>
                             </li>
                             <li class="nav-item py-4">
-                                <a class="nav-link text-center" href="#">Organisers</a>
+                                <a class="nav-link text-center" href="">Organisers</a>
                             </li>
                             <li class="nav-item py-4">
-                                <a class="nav-link text-center" href="#">Contact</a>
+                                <a class="nav-link text-center" href="">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -62,30 +60,146 @@
                             <h2 class="text-center">Mastering User Experience</h2>
                         </div>
                     </div>
-                    <div class="col-lg-6 order-lg-1 order-0"></div>
+                    <div class="col-lg-6 order-lg-1 order-0" id="dynamicElement">
+                        <img src="assets/Elementi/saturn-magla.png" alt="" id="saturnMagla">
+                    </div>
                 </div>
             </div>
         </header>
+        <!-- When, where-->
+        <div class="container-fluid mb-4" id="when-where-container">
+            <div class="row justify-content-evenly text-center">
+                <div class="col-sm-4 d-flex flex-column justify-content-center mb-5 mb-sm-0">
+                    <i class="fas fa-calendar-alt mb-3"></i>
+                    <p>23 July - 30 July 2023</p>
+                </div>
+                <div class="col-sm-4 d-flex flex-column justify-content-center">
+                    <i class="fas fa-map-marker-alt text-center mb-3"></i>
+                    <p>Niš, Serbia</p>
+                </div>
+            </div>
+        </div>
+        <!-- Paragrafi sa slikama-->
+        <div class="paragraf-sa-slikom py-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="imageContainer position-relative">
+                            <img class="img-fluid rounded mb-5 mb-lg-0"
+                                src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="designPhoto1" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="lead fw-normal mb-0">This course is a thrilling journey into the world of UX design.
+                            You'll
+                            start by learning the key principles and concepts of UX design, and then move on to
+                            practical exercises and real-world
+                            examples to put your newfound knowledge into practice.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="paragraf-sa-slikom pb-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-first order-lg-last">
+                        <div class="imageContainer position-relative">
+                            <img class="img-fluid rounded mb-5 mb-lg-0"
+                                src="https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="designPhoto2" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="lead fw-normal mb-0">Throughout the course, you'll discover the steps to creating a
+                            seamless and enjoyable user experience, and learn how to
+                            test and refine your designs.</p>
+                        <a href="https://www.best.eu.org/event/details.jsp?activity=i4afz53" target="_blank"><button
+                                class="btn mt-4 pt-sm-2" id="learn-more-button">Learn more</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Countdown timer and apply now-->
+        <div class="pb-5 my-5" id="countdown-section">
+            <div class="container px-5">
+                <div class="row text-center">
+                    <h2>Course starting in:</h2>
+                    <div class="timerDisplay d-flex justify-content-center align-items-center gap-2">
+                        <span id="days"><span id="daysText">000</span>
+                            <div>days</div>
+                        </span><span>:<div>.</div></span>
+                        <span id="hours"><span id="hoursText">00</span>
+                            <div>hours</div>
+                        </span><span>:<div>.</div></span>
+                        <span id="minutes"><span id="minutesText">00</span>
+                            <div>minutes</div>
+                        </span><span>:<div>.</div></span>
+                        <span id="seconds"><span id="secondsText">00</span>
+                            <div>seconds</div>
+                        </span>
+                    </div>
+                    <a href="https://www.best.eu.org/event/details.jsp?activity=i4afz53" target="_blank"><button
+                            class="btn mt-md-4 py-2 px-3" id="apply-now-button">Apply now</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- Cards -->
+        <div class="pb-5 my-5" id="cards-section">
+            <div class="container">
+                <div class="row justify-content-around align-items-center flex-column flex-lg-row">
+                    <div class="card bg-dark col-lg-3 text-center py-4 my-3 my-lg-0">
+                        <img src="https://diligentwebsiteapistart.azurewebsites.net/uploads/innovation_icon_35003ffd1e.svg"
+                            class="card-img-top mx-auto" alt="ikona1">
+                        <div class="card-body pt-3 pb-0">
+                            <h3 class="card-title text-center mb-2">Writing a ML</h3>
+                            <a href="https://www.best.eu.org/courses/howToWriteAMotivationLetter.jsp"
+                                class="btn">Open</a>
+                        </div>
+                    </div>
+                    <div class="card bg-dark col-lg-3 text-center py-4 my-3 my-lg-0">
+                        <img src="https://diligentwebsiteapistart.azurewebsites.net/uploads/user_icon_07b3367816.svg"
+                            target="_blank" class="card-img-top mx-auto" alt="ikona1">
+                        <div class="card-body pt-3 pb-0">
+                            <h3 class="card-title text-center mb-2">Survival Guide</h3>
+                            <a href="https://drive.google.com/file/d/1cJtr2tLAGuYIf0VHzyVpU3CpAAA-rYl4/view"
+                                target="_blank" class="btn">Open</a>
+                        </div>
+                    </div>
+                    <div class="card bg-dark col-lg-3 text-center py-4 my-3 my-lg-0">
+                        <img src="https://website-api-dev.dilig.net/uploads/product_icon_e71a676ad7.svg"
+                            class="card-img-top mx-auto" alt="ikona1">
+                        <div class="card-body pt-3 pb-0">
+                            <h3 class="card-title text-center mb-2">Schedule</h3>
+                            <a href="https://docs.google.com/spreadsheets/d/1Jex5MhE2Mo0yf8DHhd5xUdo1yWL7G5Pz1XpBuONr3SE/edit#gid=0"
+                                target="_blank" class="btn">Open</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Footer-->
     <footer class="py-4">
         <div class="container">
             <div class="row align-items-center justify-content-center">
-                <div class="col-md-2 d-flex align-items-center justify-content-center"><img
-                        src="assets/BEST crop.png" alt="Best-Logo" id="BEST-logo"></div>
-                <div class="col-md-2 d-flex align-items-center justify-content-center"><img
-                        src="assets/logo.png" alt="logo"></div>
-                <div class="col-md-2 d-flex align-items-center justify-content-center"><img
-                        src="assets/BC logo.png" alt="logo"></div>
+                <div class="col-md-2 d-flex align-items-center justify-content-center"><a
+                        href="https://bestnis.rs/language/en/" target="_blank"> <img src="assets/BEST crop.png"
+                            alt="Best-Logo" id="BEST-logo"></a></div>
+                <div class="col-md-2 d-flex align-items-center justify-content-center"><a href="#"> <img
+                            src="assets/logo.png" alt="Event logo"></a></div>
+                <div class="col-md-2 d-flex align-items-center justify-content-center"><a
+                        href="https://www.best.eu.org/courses/welcome.jsp" target="_blank"> <img
+                            src="assets/BC logo.png" alt="Best Courses"></a></div>
             </div>
             <div id="social-icons" class="row align-items-center justify-content-center pt-4">
-                <a href="https://github.com/djordjevicv" target="_blank" class="col-1 text-center"><i
+                <a href="https://www.facebook.com/BESTnis.rs" target="_blank" class="col-1 text-center"><i
                         class="fab fa-facebook-square"></i></a>
-                <a href="https://github.com/djordjevicv" target="_blank" class="col-1 text-center"><i
+                <a href="https://www.linkedin.com/company/bestni%C5%A1/" target="_blank" class="col-1 text-center"><i
                         class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/djordjevicv" target="_blank" class="col-1 text-center"><i
+                <a href="https://www.instagram.com/best_nis/" target="_blank" class="col-1 text-center"><i
                         class="fab fa-instagram"></i></a>
-                <a href="https://github.com/djordjevicv" target="_blank" class="col-1 text-center"><i
+                <a href="mailto:nis@best-eu.org" target="_blank" class="col-1 text-center"><i
                         class="far fa-envelope"></i></a>
             </div>
         </div>
@@ -93,7 +207,10 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="../js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
+    <!-- My JS-->
+    <script src="js/timerScript.js"></script>
+    <script src="js/sponsorsScript.js"></script>
 </body>
 
 </html>
