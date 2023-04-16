@@ -33,7 +33,9 @@ body {
     width: 100%;
     margin: 0;
 }
-
+button:focus, .btn:focus, .btn-close:focus{
+    box-shadow: none;
+}
 
 /*NAVIGATION*/
 .navbar {
@@ -51,6 +53,12 @@ body {
     position: relative;
 }
 
+.navbar-toggler {
+    background: linear-gradient(45deg, var(--gray), var(--purple));
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
 .navbar-toggler {
     background: linear-gradient(45deg, var(--gray), var(--purple));
 }
@@ -116,7 +124,51 @@ h2 {
     font-weight: 400;
     text-shadow: 1px 1px 2px var(--purpleD1);
 }
+@keyframes floating{
+    0%{
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes grow {
+    0%{
+        scale: 1;
+        transform: translateY(0px);
+    }
 
+    100% {
+        scale: 1.3;
+        transform: translateY(-15px);
+    }
+}
+#dynamicElement {
+    position: relative;
+}
+
+#dynamicElement img {
+    position: absolute;
+    animation: ease-in-out floating 3s infinite;
+}
+
+#saturnMagla {
+    position: relative !important;
+    width: 100%;
+}
+#raketa{
+    width: 100px;
+    z-index: 100;
+    rotate: 45deg;
+    bottom: 15vh;
+    left: 5vw;
+    animation: ease-in-out grow 10s infinite !important;
+    animation: ease-in-out floating 3s infinite;
+    
+}
 @media only screen and (max-width: 1199px) {
     header .h1 {
         font-size: 3.7em;
@@ -153,6 +205,347 @@ h2 {
     }
 }
 
+/*WHEN, WHERE*/
+#when-where-container i {
+    font-size: 3.5rem;
+    color: var(--purple);
+}
+
+#when-where-container p {
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 991px) {
+    #when-where-container i {
+        font-size: 3.2rem;
+        color: var(--purple);
+    }
+
+    #when-where-container p {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 755px) {
+    #when-where-container i {
+        font-size: 3rem;
+        color: var(--purple);
+    }
+
+    #when-where-container p {
+        font-size: 1.3rem;
+    }
+}
+
+
+/*PARAGRAFI SA SLIKAMA*/
+.paragraf-sa-slikom img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.imageContainer::after{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, var(--gray), var(--purpleD1));
+    opacity: 0.7;
+    z-index: 1000;
+    display: block;
+    content: "";
+}
+.btn {
+    background: var(--purple);
+    color: var(--white);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+    transition: all 0.25s;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    scale: 0.98;
+    filter: brightness(0.9);
+    color: var(--white);
+    background-color: var(--purple);
+    border-color: none;
+}
+
+.btn:active{
+    color: var(--white) !important;
+    background-color: var(--purple) !important;
+    border-color: transparent !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .imageContainer::after{
+        height: calc(100% - 3rem);
+    }
+}
+@media only screen and (max-width: 575px) {
+    #learn-more-button {
+        font-size: 1rem;
+    }
+}
+
+
+/* COUNTDOWN SECTION */
+.timerDisplay {
+    font-weight: 100;
+    font-size: 4rem;
+    margin: 0;
+    color: var(--white);
+}
+
+.timerDisplay>span {
+    position: relative;
+    padding: 0.5rem;
+}
+
+.timerDisplay span div {
+    position: relative;
+    font-size: 1.5rem;
+    top: -0.8rem;
+}
+
+.timerDisplay span div:not(.timerDisplay #months div,
+    .timerDisplay #days div,
+    .timerDisplay #hours div,
+    .timerDisplay #minutes div,
+    .timerDisplay #seconds div) {
+    visibility: hidden;
+}
+
+h2:not(header h2) {
+    font-size: 3.5rem;
+}
+
+#apply-now-button {
+    font-size: 2rem;
+    border-radius: 20px;
+    background: linear-gradient(45deg, var(--grayL2), var(--purple));
+    border: none;
+}
+
+@media only screen and (max-width:1000px) {
+    .timerDisplay {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+
+    .timerDisplay>span {
+        position: relative;
+        padding: 0.5rem;
+    }
+
+    .timerDisplay span div {
+        position: relative;
+        font-size: 1.5rem;
+        top: -0.8rem;
+    }
+
+    h2:not(header h2) {
+        font-size: 3rem;
+    }
+
+    #apply-now-button {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .timerDisplay {
+        font-weight: 100;
+        font-size: 2.3rem;
+        margin: 0;
+        color: var(--white);
+    }
+
+    .timerDisplay>span {
+        position: relative;
+        padding: 0.5rem;
+    }
+
+    .timerDisplay span div {
+        position: relative;
+        font-size: 1rem;
+        top: -0.8rem;
+    }
+
+    h2:not(header h2) {
+        font-size: 2rem;
+    }
+
+    #apply-now-button {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:552px) {
+    .timerDisplay {
+        font-weight: 100;
+        font-size: 2rem;
+        margin: 0;
+        color: var(--white);
+    }
+
+    .timerDisplay>span {
+        position: relative;
+        padding: 0.2rem;
+    }
+
+    .timerDisplay span div {
+        position: relative;
+        font-size: 1rem;
+        top: -0.8rem;
+    }
+
+    h2:not(header h2) {
+        font-size: 1.5rem;
+        letter-spacing: 0.6rem;
+    }
+
+    #apply-now-button {
+        font-size: 1rem;
+    }
+}
+
+
+/* CARDS */
+.card {
+    width: 25%;
+}
+
+.card-img-top {
+    width: 40%;
+}
+
+.card h3,
+.card .btn {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.card .btn {
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+}
+
+@media only screen and (max-width:991px) {
+    .card {
+        width: 60%;
+    }
+}
+
+
+/* PREDAVACI */
+.karticaPredavaca {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.slikaPredavaca {
+    width: 100%;
+}
+
+.professorContact i {
+    font-size: 1.8rem;
+    color: var(--purple);
+    transition: all 0.3s;
+    border: none;
+}
+
+.professorContact i:hover {
+    scale: 0.95;
+    filter: brightness(0.8);
+}
+
+.professorInfo h3 {
+    font-size: 2rem;
+}
+
+.professorInfo p {
+    margin: 0;
+}
+
+.professorInfo h3+p {
+    font-size: 1.1rem;
+    color: var(--purple);
+}
+
+.bio {
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width:991px) {
+    .slikaPredavaca {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .professorInfo h3 {
+        font-size: 1.5rem;
+    }
+
+    .professorContact i {
+        font-size: 1.6rem;
+    }
+
+    .professorInfo h3+p {
+        font-size: 1.05rem;
+    }
+
+    .bio {
+        font-size: 1rem;
+    }
+}
+
+
+/* POKROVITELJI */
+@keyframes scroll {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow-x: hidden;
+    white-space: nowrap;
+    user-select: none;
+    position: relative;
+}
+
+/*.logos::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: -15%;    
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0), var(--gray));
+    z-index: 10;
+}*/
+.slider {
+    white-space: nowrap;
+    transform: translateX(50%);
+    animation: scroll 15s infinite linear;
+}
+
+.slider img {
+    width: 250px;
+    padding: 0 3rem;
+}
+
+.slider.active {
+    animation-play-state: paused;
+}
 
 /*FOOTER*/
 footer {
@@ -174,5 +567,6 @@ footer img {
 }
 
 #social-icons i:hover {
-    scale: 0.8;
+    scale: 0.95;
+    color: var(--white)
 }
