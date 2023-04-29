@@ -1,0 +1,136 @@
+<!-- Predavaci-->
+        <div class="pb-5 my-5">
+            <h2 class="text-center">Meet our tutors</h2>
+            <div class="container px-5">
+                <div
+                    class="karticaPredavaca row bg-dark justify-content-between align-items-center mt-5 gx-2 rounded-2">
+                    <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center gap-3">
+                        <img src="https://bestweek.bestnis.rs/wp-content/uploads/2022/12/IMG_9727-5-1-1-1.jpg"
+                            alt="slika-predavaca" class="slikaPredavaca rounded">
+                        <div class="professorContact d-flex justify-content-center mb-4 mb-lg-0">
+                            <a href="https://github.com/djordjevicv" target="_blank" class="me-4"><i
+                                    class="far fa-envelope"></i></a>
+                            <a href="https://github.com/djordjevicv" target="_blank" class=""><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="professorInfo col-lg-8">
+                        <div class="nameAndPosition mb-2 mb-lg-3">
+                            <h3 class="mb-1">Vukašin Stanojević</h3>
+                            <p>Profesor na PMF-u</p>
+                        </div>
+                        <p class="bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sunt
+                            exercitationem cumque, magnam quidem commodi maxime error. Eaque sequi cumque aut mollitia
+                            vero enim, natus molestias eius quasi aliqu Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Possimus sed hic magnam laborum, saepe earum! Voluptatem repellendus
+                            officiis adipisci aliquam facilis nemo, animi molestiae itaque quae vero illo obcaecati
+                            accusantium?</p>
+                    </div>
+                </div>
+                <div
+                    class="karticaPredavaca row bg-dark justify-content-between align-items-center mt-5 gx-2 rounded-2">
+                    <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center gap-3">
+                        <img src="https://bestweek.bestnis.rs/wp-content/uploads/2022/12/IMG_9727-5-1-1-1.jpg"
+                            alt="slika-predavaca" class="slikaPredavaca rounded">
+                        <div class="professorContact d-flex justify-content-center mb-4 mb-lg-0">
+                            <a href="https://github.com/djordjevicv" target="_blank" class="me-4"><i
+                                    class="far fa-envelope"></i></a>
+                            <a href="https://github.com/djordjevicv" target="_blank" class=""><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="professorInfo col-lg-8">
+                        <div class="nameAndPosition mb-2 mb-lg-3">
+                            <h3 class="mb-1">Vukašin Stanojević</h3>
+                            <p>Profesor na PMF-u</p>
+                        </div>
+                        <p class="bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sunt
+                            exercitationem cumque, magnam quidem commodi maxime error. Eaque sequi cumque aut mollitia
+                            vero enim, natus molestias eius quasi aliqu Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Possimus sed hic magnam laborum, saepe earum! Voluptatem repellendus
+                            officiis adipisci aliquam facilis nemo, animi molestiae itaque quae vero illo obcaecati
+                            accusantium?</p>
+                    </div>
+                </div>
+                <div
+                    class="karticaPredavaca row bg-dark justify-content-between align-items-center mt-5 gx-2 rounded-2">
+                    <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center gap-3">
+                        <img src="https://bestweek.bestnis.rs/wp-content/uploads/2022/12/IMG_9727-5-1-1-1.jpg"
+                            alt="slika-predavaca" class="slikaPredavaca rounded">
+                        <div class="professorContact d-flex justify-content-center mb-4 mb-lg-0">
+                            <a href="https://github.com/djordjevicv" target="_blank" class="me-4"><i
+                                    class="far fa-envelope"></i></a>
+                            <a href="https://github.com/djordjevicv" target="_blank" class=""><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="professorInfo col-lg-8">
+                        <div class="nameAndPosition mb-2 mb-lg-3">
+                            <h3 class="mb-1">Vukašin Stanojević</h3>
+                            <p>Profesor na PMF-u</p>
+                        </div>
+                        <p class="bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sunt
+                            exercitationem cumque, magnam quidem commodi maxime error. Eaque sequi cumque aut mollitia
+                            vero enim, natus molestias eius quasi aliqu Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Possimus sed hic magnam laborum, saepe earum! Voluptatem repellendus
+                            officiis adipisci aliquam facilis nemo, animi molestiae itaque quae vero illo obcaecati
+                            accusantium?</p>
+                    </div>
+                </div>
+                <div
+                    class="karticaPredavaca row bg-dark justify-content-between align-items-center mt-5 gx-2 rounded-2">
+                    <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center gap-3">
+                        <img src="https://bestweek.bestnis.rs/wp-content/uploads/2022/12/IMG_9727-5-1-1-1.jpg"
+                            alt="slika-predavaca" class="slikaPredavaca rounded">
+                        <div class="professorContact d-flex justify-content-center mb-4 mb-lg-0">
+                            <a href="https://github.com/djordjevicv" target="_blank" class="me-4"><i
+                                    class="far fa-envelope"></i></a>
+                            <a href="https://github.com/djordjevicv" target="_blank" class=""><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="professorInfo col-lg-8">
+                        <div class="nameAndPosition mb-2 mb-lg-3">
+                            <h3 class="mb-1">Vukašin Stanojević</h3>
+                            <p>Profesor na PMF-u</p>
+                        </div>
+                        <p class="bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sunt
+                            exercitationem cumque, magnam quidem commodi maxime error. Eaque sequi cumque aut mollitia
+                            vero enim, natus molestias eius quasi aliqu Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Possimus sed hic magnam laborum, saepe earum! Voluptatem repellendus
+                            officiis adipisci aliquam facilis nemo, animi molestiae itaque quae vero illo obcaecati
+                            accusantium?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pokrovitelji -->
+        <div class="pb-5 my-5">
+            <h2 class="text-center">Our sponsors</h2>
+            <div class="container-fluid mt-5">
+                <div class="logos align-items-center justify-content-center">
+                    <div class="slider d-inline-flex align-items-center justify-content-center">
+                        <img src="assets/BEST crop.png" alt="best-logo">
+                        <img src="assets/BC logo.png" alt="best-logo">
+                        <img src="assets/logo.png" alt="best-logo">
+                        <img src="assets/BEST crop.png" alt="best-logo">
+                        <img src="assets/BC logo.png" alt="best-logo">
+                        <img src="assets/logo.png" alt="best-logo">
+                        <img src="assets/BEST crop.png" alt="best-logo">
+                        <img src="assets/BC logo.png" alt="best-logo">
+                        <img src="assets/logo.png" alt="best-logo">
+                    </div>
+                    <div class="slider d-inline-flex align-items-center justify-content-center">
+                        <img src="assets/BEST crop.png" alt="best-logo">
+                        <img src="assets/BC logo.png" alt="best-logo">
+                        <img src="assets/logo.png" alt="best-logo">
+                        <img src="assets/BEST crop.png" alt="best-logo">
+                        <img src="assets/BC logo.png" alt="best-logo">
+                        <img src="assets/logo.png" alt="best-logo">
+                        <img src="assets/BEST crop.png" alt="best-logo">
+                        <img src="assets/BC logo.png" alt="best-logo">
+                        <img src="assets/logo.png" alt="best-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
