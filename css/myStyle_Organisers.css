@@ -1,0 +1,78 @@
+header {
+    min-height: 60vh;
+    padding-top: 12vh;
+    background: linear-gradient(45deg, var(--gray), 70%, var(--purpleD1))
+}
+
+header .h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    opacity: 0.7;
+}
+
+/* PARAGRAFI SA SLIKAMA */
+.paragraf-sa-slikom {}
+
+.paragraf-sa-slikom:last-of-type {}
+
+@media only screen and (min-width:992px) {
+    #slikaInternacionale {
+        transform: translate(2vw, 15vh);
+        rotate: 5deg;
+    }
+
+    #slikaLBGa {
+        transform: translate(3vw, -10vh);
+        rotate: -5deg;
+    }
+}
+
+.paragraf-sa-slikom img {
+    height: 380px;
+}
+
+/* CORE TEAM */
+#CoreTeam-section {}
+
+.card {
+    padding: 2rem;
+    padding-bottom: 1rem;
+    width: 300px;
+    transition: all 0.2s;
+}
+
+.card:hover {
+    scale: 0.99;
+    filter: brightness(0.99999);
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding-bottom: 0;
+}
+
+.card-title {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+}
+
+.card-subtitle {
+    font-weight: 500;
+    margin-top: 0.1rem;
+    font-size: clamp(1.2rem, 1.5vw, 1.7rem);
+    color: var(--purple);
+}
+
+.organiserContact {}
+
+.organiserContact i {
+    font-size: 1.6rem;
+    color: var(--purple);
+}

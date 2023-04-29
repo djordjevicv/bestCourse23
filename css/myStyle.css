@@ -33,15 +33,20 @@ body {
     width: 100%;
     margin: 0;
 }
-button:focus, .btn:focus, .btn-close:focus{
+
+button:focus,
+.btn:focus,
+.btn-close:focus {
     box-shadow: none;
 }
+
 
 /*NAVIGATION*/
 .navbar {
     background: var(--gray);
     opacity: 1;
     box-shadow: 1px 1px 1px 1px var(--purple);
+    height: 12vh;
 }
 
 .navbar>container {
@@ -55,13 +60,18 @@ button:focus, .btn:focus, .btn-close:focus{
 
 .navbar-toggler {
     background: linear-gradient(45deg, var(--gray), var(--purple));
+    transition: all 0.2s;
 }
+
+.navbar-toggler:hover {
+    scale: 0.95;
+    filter: brightness(0.95);
+}
+
 .navbar-toggler:focus {
     box-shadow: none;
 }
-.navbar-toggler {
-    background: linear-gradient(45deg, var(--gray), var(--purple));
-}
+
 
 .navbar-toggler-icon {
     width: 1.2em;
@@ -124,19 +134,23 @@ h2 {
     font-weight: 400;
     text-shadow: 1px 1px 2px var(--purpleD1);
 }
-@keyframes floating{
-    0%{
+
+@keyframes floating {
+    0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-15px);
     }
+
     100% {
         transform: translateY(0px);
     }
 }
+
 @keyframes grow {
-    0%{
+    0% {
         scale: 1;
         transform: translateY(0px);
     }
@@ -146,6 +160,7 @@ h2 {
         transform: translateY(-15px);
     }
 }
+
 #dynamicElement {
     position: relative;
 }
@@ -159,7 +174,8 @@ h2 {
     position: relative !important;
     width: 100%;
 }
-#raketa{
+
+#raketa {
     width: 100px;
     z-index: 100;
     rotate: 45deg;
@@ -167,41 +183,41 @@ h2 {
     left: 5vw;
     animation: ease-in-out grow 10s infinite !important;
     animation: ease-in-out floating 3s infinite;
-    
+
 }
+
 @media only screen and (max-width: 1199px) {
     header .h1 {
-        font-size: 3.7em;
+        font-size: 3.7em !important;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 2rem !important;
+        ;
     }
 }
 
 @media only screen and (max-width: 575px) {
     header .h1 {
-        font-size: 3.2em;
+        font-size: 3.2em !important;
+        ;
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.8rem !important;
+        ;
     }
 }
 
 @media only screen and (max-width: 470px) {
-    .offcanvas-body .nav-item {
-        font-size: 3.8rem;
-        font-weight: 500;
-    }
-
-    /*HEADER*/
     header .h1 {
-        font-size: 2.3em;
+        font-size: 2.3em !important;
+        ;
     }
 
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.3rem !important;
+        ;
     }
 }
 
@@ -243,11 +259,13 @@ h2 {
     width: 100%;
     height: 300px;
     position: relative;
+    object-fit: cover;
 }
-.imageContainer::after{
+
+.imageContainer::after {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     background: linear-gradient(45deg, var(--gray), var(--purpleD1));
@@ -256,6 +274,7 @@ h2 {
     display: block;
     content: "";
 }
+
 .btn {
     background: var(--purple);
     color: var(--white);
@@ -273,17 +292,18 @@ h2 {
     border-color: none;
 }
 
-.btn:active{
+.btn:active {
     color: var(--white) !important;
     background-color: var(--purple) !important;
     border-color: transparent !important;
 }
 
 @media only screen and (max-width: 991px) {
-    .imageContainer::after{
+    .imageContainer::after {
         height: calc(100% - 3rem);
     }
 }
+
 @media only screen and (max-width: 575px) {
     #learn-more-button {
         font-size: 1rem;
@@ -414,7 +434,7 @@ h2:not(header h2) {
 
 
 /* CARDS */
-.card {
+.cardInfo {
     width: 25%;
 }
 
@@ -422,17 +442,17 @@ h2:not(header h2) {
     width: 40%;
 }
 
-.card h3,
-.card .btn {
+.cardInfo h3,
+.cardInfo .btn {
     font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
-.card .btn {
+.cardInfo .btn {
     font-size: clamp(1.2rem, 1.5vw, 1.5rem);
 }
 
 @media only screen and (max-width:991px) {
-    .card {
+    .cardInfo {
         width: 60%;
     }
 }
@@ -450,14 +470,16 @@ h2:not(header h2) {
     width: 100%;
 }
 
-.professorContact i {
+.professorContact i,
+.organiserContact i {
     font-size: 1.8rem;
     color: var(--purple);
     transition: all 0.3s;
     border: none;
 }
 
-.professorContact i:hover {
+.professorContact i:hover,
+.organiserContact i:hover {
     scale: 0.95;
     filter: brightness(0.8);
 }
@@ -556,6 +578,15 @@ footer img {
     width: 130px;
 }
 
+#logo-container a {
+    transition: all 0.3s;
+}
+
+#logo-container a:hover {
+    scale: 0.95;
+    filter: brightness(0.9);
+}
+
 #BEST-logo {
     width: 100px;
 }
@@ -568,5 +599,5 @@ footer img {
 
 #social-icons i:hover {
     scale: 0.95;
-    color: var(--white)
+    color: var(--white);
 }
