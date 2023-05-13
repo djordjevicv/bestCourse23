@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --black: #0E143A;
+    --black: #183157;
     --orange: #FFACBE;
     --pink: #FD36F5;
-    --blue: #4BBAE3;
+    --blue: #1F456C;
     --yellow: #DBC88A;
 
     --purple: #8640aa;
@@ -40,12 +40,24 @@ button:focus,
     box-shadow: none;
 }
 
+.toAppear {
+    opacity: 0;
+    scale: 0.8;
+    transition: all .5s;
+}
+
+.toAppear.active {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0%) scale(1);
+}
 
 /*NAVIGATION*/
 .navbar {
     background: var(--gray);
     opacity: 1;
     box-shadow: 1px 1px 1px 1px var(--purple);
+    min-height: min-content;
     height: 12vh;
 }
 
@@ -79,19 +91,23 @@ button:focus,
 }
 
 .offcanvas-body {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 .offcanvas.offcanvas-end {
-    background: linear-gradient(90deg, var(--gray), var(--purpleD1));
+    background: linear-gradient(90deg, var(--grayL1), var(--purpleD1));
     transition: all 0.35s;
     width: 100vw;
-    opacity: 1;
+    opacity: 1 !important;
 }
 
-.offcanvas-body .nav-item {
+.nav-item {
     font-size: 4rem;
     font-weight: 500;
+}
+
+.nav-item:last-of-type {
+    font-size: 3rem;
 }
 
 .offcanvas button {
@@ -99,13 +115,17 @@ button:focus,
     top: 2rem;
     right: 2rem;
     transform: scale(2);
+    z-index: 100;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 565px) {
     .offcanvas-body .nav-item {
-        font-size: 3.8rem;
+        font-size: 3rem;
         font-weight: 500;
     }
+        .nav-item:last-of-type {
+            font-size: 2.5rem;
+        }
 }
 
 
@@ -188,11 +208,24 @@ h2 {
 
 @media only screen and (max-width: 1199px) {
     header .h1 {
-        font-size: 3.7em !important;
+        font-size: 3.5em !important;
     }
 
     h2 {
         font-size: 2rem !important;
+        ;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+
+    /* targeting between md and lg*/
+    header .h1 {
+        font-size: 2.5em !important;
+    }
+
+    h2 {
+        font-size: 1.8rem !important;
         ;
     }
 }
@@ -216,29 +249,27 @@ h2 {
     }
 
     h2 {
-        font-size: 1.3rem !important;
-        ;
+        
     }
 }
 
 /*WHEN, WHERE*/
 #when-where-container i {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--purple);
 }
 
 #when-where-container p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 991px) {
     #when-where-container i {
-        font-size: 3.2rem;
-        color: var(--purple);
+        font-size: 3rem;
     }
 
     #when-where-container p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -249,17 +280,55 @@ h2 {
     }
 
     #when-where-container p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 }
 
 
 /*PARAGRAFI SA SLIKAMA*/
-.paragraf-sa-slikom img {
-    width: 100%;
-    height: 300px;
+.movingImagesContainer {
     position: relative;
-    object-fit: cover;
+    height: 30vh;
+animation: ease-in-out floating 3s infinite;
+}
+/*
+VRLO VAZAN NOTE!!!
+Imam jedan imageContainerDiv cija je pozicija relativna, on mi diktira zauzece prostora movingImagesContainer-a,
+ostala dva u sekciji ce biti apsolutno pozicionirani
+*/
+.imageContainerDiv {
+    width: 40vw;
+    max-width: 300px;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    top: -20%;
+    z-index: 0;
+}
+
+.imageContainerDiv:nth-of-type(2) {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    z-index: 2;
+}
+
+.imageContainerDiv:nth-of-type(3) {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+}
+
+.imageContainer {
+  
+}
+
+.imageContainerDiv-2 .imageContainer {
+    rotate: -20deg;
+}
+
+.imageContainerDiv-3 .imageContainer {
+    rotate: 20deg;
 }
 
 .imageContainer::after {
@@ -268,27 +337,37 @@ h2 {
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(45deg, var(--gray), var(--purpleD1));
+    background: linear-gradient(10deg, var(--gray), var(--purple));
     opacity: 0.7;
     z-index: 1000;
     display: block;
     content: "";
 }
 
+.paragraf-sa-slikom img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+.paragraf-sa-slikom p{
+    margin-top: 5rem;
+}
 .btn {
     background: var(--purple);
     color: var(--white);
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     transition: all 0.25s;
     margin: 0 auto;
 }
 
 .btn:hover {
+    background: var(--purple);
+    color: var(--white);
     scale: 0.98;
     filter: brightness(0.9);
-    color: var(--white);
-    background-color: var(--purple);
     border-color: none;
 }
 
@@ -300,7 +379,7 @@ h2 {
 
 @media only screen and (max-width: 991px) {
     .imageContainer::after {
-        height: calc(100% - 3rem);
+        /* height: calc(100% - 3rem); */
     }
 }
 
@@ -314,7 +393,7 @@ h2 {
 /* COUNTDOWN SECTION */
 .timerDisplay {
     font-weight: 100;
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
     color: var(--white);
 }
@@ -326,7 +405,7 @@ h2 {
 
 .timerDisplay span div {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     top: -0.8rem;
 }
 
@@ -339,11 +418,12 @@ h2 {
 }
 
 h2:not(header h2) {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
 }
 
 #apply-now-button {
-    font-size: 2rem;
+    max-width: 300px;
+    font-size: 1.5rem;
     border-radius: 20px;
     background: linear-gradient(45deg, var(--grayL2), var(--purple));
     border: none;
@@ -366,9 +446,7 @@ h2:not(header h2) {
         top: -0.8rem;
     }
 
-    h2:not(header h2) {
-        font-size: 3rem;
-    }
+    h2:not(header h2) {}
 
     #apply-now-button {
         font-size: 1.5rem;
@@ -424,7 +502,7 @@ h2:not(header h2) {
 
     h2:not(header h2) {
         font-size: 1.5rem;
-        letter-spacing: 0.6rem;
+        letter-spacing: 0.3rem;
     }
 
     #apply-now-button {
@@ -434,20 +512,28 @@ h2:not(header h2) {
 
 
 /* CARDS */
+.card{
+    background: var(--blue);
+}
+.card:nth-of-type(1){
+    background: var(--purple);
+}
+
 .cardInfo {
     width: 25%;
 }
 
 .card-img-top {
     width: 40%;
+    max-width: 7rem;
 }
 
-.cardInfo h3,
-.cardInfo .btn {
-    font-size: clamp(1.5rem, 2vw, 2rem);
+.cardInfo h3 {
+    font-size: clamp(1.2rem, 2vw, 1.3rem);
 }
 
 .cardInfo .btn {
+    background: var(--purple);
     font-size: clamp(1.2rem, 1.5vw, 1.5rem);
 }
 
@@ -575,7 +661,11 @@ footer {
 }
 
 footer img {
-    width: 130px;
+    width: 120px;
+}
+
+#BEST-logo {
+    width: 100px;
 }
 
 #logo-container a {
@@ -587,10 +677,6 @@ footer img {
     filter: brightness(0.9);
 }
 
-#BEST-logo {
-    width: 100px;
-}
-
 #social-icons i {
     font-size: 1.25rem;
     color: white;
@@ -600,4 +686,37 @@ footer img {
 #social-icons i:hover {
     scale: 0.95;
     color: var(--white);
+}
+
+@media only screen and (max-width:575px) {
+    footer img {
+        width: 120px;
+    }
+
+    #BEST-logo {
+        width: 80px;
+    }
+}
+
+/* MODAL */
+.modal-content {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.modal-content p {
+    margin: 0;
+}
+
+.modal-title {
+    color: var(--white);
+}
+
+.modal-header .btn-close {
+    color: var(--white);
+}
+
+.modal-footer .btn {
+    font-size: 1.1rem;
+    background: var(--purple);
 }
