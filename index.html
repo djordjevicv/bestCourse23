@@ -26,25 +26,30 @@
         <nav class="navbar navbar-collapse navbar-dark fixed-top p-0">
             <div class="container-fluid justify-content-between px-5">
                 <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                    aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
                     aria-labelledby="offcanvasDarkNavbarLabel">
                     <div class="offcanvas-body d-flex justify-content-center">
-                        <button type="button" class="btn-close btn-close-white align-self-end"
-                            data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        <ul class="navbar-nav justify-content-center flex-grow-1">
-                            <li class="nav-item py-4">
-                                <a class="nav-link active text-center" aria-current="page" href="">Home</a>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                        <ul class="navbar-nav justify-content-center flex-grow-1 position-relative">
+                            <li class="nav-item">
+                                <a class="nav-link active text-center" href="./index.html">Home</a>
                             </li>
-                            <li class="nav-item py-4">
-                                <a class="nav-link text-center" href="index.html">Organisers</a>
+                            <li class="nav-item">
+                                <a class="nav-link text-center" aria-current="page"
+                                    href="./pages/Organisers.html">Organisers</a>
                             </li>
-                            <li class="nav-item py-4">
-                                <a class="nav-link text-center" href="index.html">Contact Us</a>
+                            <li class="nav-item">
+                                <a class="nav-link text-center" href="./pages/Contact Us.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item d-flex text-center justify-content-center">
+                                <a class="nav-link text-center" href="./pages/indexSRB.html">SRB &nbsp</a>|<a
+                                    class="nav-link text-center" href="./index.html">&nbsp
+                                    ENG</a>
                             </li>
                         </ul>
                     </div>
@@ -52,16 +57,16 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="py-5 d-flex align-items-center">
+        <header class="py-5 py-md-0 mb-5 mb-md-0 d-flex align-items-center">
             <div class="container-fluid">
                 <div class="row g-0 align-items-center justify-content-between">
-                    <div class="col-lg-6 order-lg-0 order-1">
+                    <div class="headerText col-md-6 order-md-0 order-1">
                         <div class="d-flex flex-column">
                             <div class="h1 text-center"><span>UX</span>perience<br>the Design:</div>
                             <h2 class="text-center">Mastering User Experience</h2>
                         </div>
                     </div>
-                    <div class="col-lg-6 order-lg-1 order-0" id="dynamicElement">
+                    <div class="col-md-6 order-md-1 order-0" id="dynamicElement">
                         <img src="assets/Elementi/saturn-magla.png" alt="" id="saturnMagla">
                     </div>
                 </div>
@@ -81,18 +86,32 @@
             </div>
         </div>
         <!-- Paragrafi sa slikama-->
-        <div class="paragraf-sa-slikom py-5">
+        <div class="paragraf-sa-slikom pb-0 pt-5 pb-lg-5">
             <div class="container px-5 my-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="imageContainer position-relative">
-                            <img class="img-fluid rounded mb-5 mb-lg-0"
-                                src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="designPhoto1" />
+                    <div
+                        class="movingImagesContainer d-flex justify-content-center align-items-center col-lg-6 mb-5 mb-lg-0">
+                        <div class="imageContainerDiv movingImage imageContainerDiv-1">
+                            <div class="imageContainer">
+                                <img class="img-fluid rounded" src="/assets/pictures/designPicture1.webp"
+                                    alt="designPhoto1" />
+                            </div>
+                        </div>
+                        <div class="imageContainerDiv imageContainerDiv-2 movingImage">
+                            <div class="imageContainer">
+                                <img class="img-fluid rounded" src="./assets/pictures/designPicture3.jpeg"
+                                    alt="designPhoto1" />
+                            </div>
+                        </div>
+                        <div class="imageContainerDiv imageContainerDiv-3 movingImage">
+                            <div class="imageContainer">
+                                <img class="img-fluid rounded" src="/assets/pictures/designPicture2.webp"
+                                    alt="designPhoto1" />
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <p class="lead fw-normal mb-0">This course is a thrilling journey into the world of UX design.
+                    <div class="col-lg-6 mt-2 mt-sm-5 toAppear">
+                        <p class="lead fw-normal mb-0 text-end">This course is a thrilling journey into the world of UX design.
                             You'll
                             start by learning the key principles and concepts of UX design, and then move on to
                             practical exercises and real-world
@@ -101,17 +120,31 @@
                 </div>
             </div>
         </div>
-        <div class="paragraf-sa-slikom pb-5">
-            <div class="container px-5 my-5">
+        <div class="paragraf-sa-slikom py-5 mb-5">
+            <div class="container px-5 mt-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 order-first order-lg-last">
-                        <div class="imageContainer position-relative">
-                            <img class="img-fluid rounded mb-5 mb-lg-0"
-                                src="https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="designPhoto2" />
+                    <div
+                        class="movingImagesContainer d-flex justify-content-center align-items-center col-lg-6 mb-5 mb-lg-0 order-lg-last">
+                        <div class="imageContainerDiv movingImage imageContainerDiv-1">
+                            <div class="imageContainer">
+                                <img class="img-fluid rounded" src="/assets/pictures/designPicture6.webp"
+                                    alt="designPhoto5" />
+                            </div>
+                        </div>
+                        <div class="imageContainerDiv imageContainerDiv-2 movingImage">
+                            <div class="imageContainer">
+                                <img class="img-fluid rounded" src="./assets/pictures/designPicture5.jpg"
+                                    alt="designPhoto4" />
+                            </div>
+                        </div>
+                        <div class="imageContainerDiv imageContainerDiv-3 movingImage">
+                            <div class="imageContainer">
+                                <img class="img-fluid rounded" src="/assets/pictures/designPicture4.jpg"
+                                    alt="designPhoto7" />
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mt-2 mt-sm-5 toAppear">
                         <p class="lead fw-normal mb-0">Throughout the course, you'll discover the steps to creating a
                             seamless and enjoyable user experience, and learn how to
                             test and refine your designs.</p>
@@ -122,7 +155,7 @@
             </div>
         </div>
         <!-- Countdown timer and apply now-->
-        <div class="pb-5 my-5" id="countdown-section">
+        <div class="py-5 my-5 toAppear" id="countdown-section">
             <div class="container px-5">
                 <div class="row text-center">
                     <h2>Course starting in:</h2>
@@ -140,24 +173,24 @@
                             <div>seconds</div>
                         </span>
                     </div>
-                    <a href="https://www.best.eu.org/event/details.jsp?activity=i4afz53" target="_blank"><button
-                            class="btn mt-md-4 py-2 px-3" id="apply-now-button">Apply now</button></a>
+                    <button type="button" class="btn mt-md-4 py-2 px-3" id="apply-now-button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Apply now</button>
                 </div>
             </div>
         </div>
         <!-- Cards -->
-        <div class="pb-5 my-5" id="cards-section">
+        <div class="my-5 toAppear" id="cards-section">
             <div class="container">
                 <div class="row justify-content-around align-items-center flex-column flex-lg-row">
-                    <div class="card cardInfo bg-dark col-lg-3 text-center py-4 my-3 my-lg-0">
+                    <div class="card cardInfo bg-dark col-md-3 text-center py-4 my-3 my-lg-0">
                         <img src="assets/ikonica1.svg" class="card-img-top mx-auto" alt="ikona1">
                         <div class="card-body pt-3 pb-0">
-                            <h3 class="card-title text-center mb-2">Writing a ML</h3>
+                            <h3 class="card-title texts-center mb-2">Writing a ML</h3>
                             <a href="https://www.best.eu.org/courses/howToWriteAMotivationLetter.jsp" target="_blank"
                                 class="btn">Open</a>
                         </div>
                     </div>
-                    <div class="card cardInfo bg-dark col-lg-3 text-center py-4 my-3 my-lg-0">
+                    <div class="card cardInfo bg-dark col-md-3 text-center py-4 my-3 my-lg-0">
                         <img src="assets/ikonica2.svg" target="_blank" class="card-img-top mx-auto" alt="ikona2">
                         <div class="card-body pt-3 pb-0">
                             <h3 class="card-title text-center mb-2">Survival Guide</h3>
@@ -165,7 +198,7 @@
                                 target="_blank" class="btn">Open</a>
                         </div>
                     </div>
-                    <div class="card cardInfo bg-dark col-lg-3 text-center py-4 my-3 my-lg-0">
+                    <div class="card cardInfo bg-dark col-md-3 text-center py-4 my-3 my-lg-0">
                         <img src="assets/ikonica3.svg" class="card-img-top mx-auto" alt="ikona3">
                         <div class="card-body pt-3 pb-0">
                             <h3 class="card-title text-center mb-2">Schedule</h3>
@@ -181,14 +214,17 @@
     <footer class="py-4">
         <div class="container">
             <div class="row align-items-center justify-content-center" id="logo-container">
-                <div class="col-md-2 d-flex align-items-center justify-content-center mb-2"><a
-                        href="https://www.best.eu.org/courses/welcome.jsp" target="_blank"> <img
+                <div class="col-lg-2 d-flex align-items-center justify-content-center mb-2 px-5"><a
+                        href="https://www.best.eu.org/courses/welcome.jsp" target="_blank"> <img class=""
                             src="assets/BC logo.png" alt="Best Courses"></a></div>
-                <div class="col-md-2 d-flex align-items-center justify-content-center"><a
-                        href="https://bestnis.rs/language/en/" target="_blank"> <img src="assets/BEST crop.png"
-                            alt="Best-Logo" id="BEST-logo"></a></div>
-                <div class="col-md-2 d-flex align-items-center justify-content-center"><a href="#"> <img
-                            src="assets/logo.png" alt="Event logo"></a></div>
+                <div class="col-lg-2 d-flex align-items-center justify-content-center px-5"><a
+                        href="https://bestnis.rs/language/en/" target="_blank"
+                        class="d-flex align-items-center justify-content-center"> <img src="assets/BEST crop.png"
+                            class="" alt="Best-Logo" id="BEST-logo"
+                            class="d-flex align-items-center justify-content-center"></a></div>
+                <div class="col-lg-2 d-flex align-items-center justify-content-center px-5"><a href="#"> <img class=""
+                            src="assets/logo.png" alt="Event logo"
+                            class="d-flex align-items-center justify-content-center"></a></div>
             </div>
             <div id="social-icons" class="row align-items-center justify-content-center pt-4">
                 <a href="https://www.facebook.com/BESTnis.rs" target="_blank" class="col-1 text-center"><i
@@ -202,13 +238,32 @@
             </div>
         </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center align-items-center">
+            <div class="modal-content text-center bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Stay tuned!</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column gap-3 justify-content-center align-items-center">
+                    <p>Application deadline for <u>international students</u> <b>has passed!</b></p>
+                    <p><u>Serbian students</u> will be able to apply <b>from 12th of June!</b></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="/js/scripts.js"></script>
     <!-- My JS-->
+    <script src="js/appearOnScroll.js"></script>
     <script src="js/timerScript.js"></script>
     <script src="js/sponsorsScript.js"></script>
 </body>
-
 </html>

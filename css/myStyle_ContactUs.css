@@ -1,0 +1,77 @@
+/* Header */
+header {
+    min-height: 80vh;
+    padding-top: 12vh;
+    background: linear-gradient(45deg, var(--gray), 70%, var(--purpleD1))
+}
+
+header .h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h2:not(header h2) {
+    font-size: 3rem;
+}
+
+h5 {
+    color: var(--purple);
+}
+.btn{
+    background: var(--purple);
+}
+.btn:hover{
+    background: var(--purple);
+}
+
+@media only screen and (max-width: 1199px) {
+   header h1{
+    font-size: 3.5em !important;
+   }
+}
+
+/* Form */
+.form-control {
+    background: #ffffff;
+}
+
+.form-control:focus {
+    border-color: var(--purpleD1);
+    outline: 0;
+    box-shadow: 1px 1px 5px 0.25rem var(--purple);
+}
+
+form input {
+    font-family: inherit;
+}
+
+/* WHERE TO FIND US */
+iframe{
+    width: 100%;
+}
+.infoIspodMape{
+    font-size: 1.4rem;
+}
+.infoIspodMape a{
+    color: inherit;
+    text-decoration: none;
+}
+.infoIspodMape i{
+    color: var(--purple);
+    margin-bottom: 0 !important;
+}
+
+@media only screen and (max-width:470px) {
+    h5{
+            font-size: 1rem;
+        }
+    .btn{
+        font-size: 1rem;
+    }
+    .infoIspodMape{
+        font-size: 1rem;
+    }
+}
