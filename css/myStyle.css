@@ -209,7 +209,7 @@ h2 {
 
 @media only screen and (max-width: 1199px) {
     header .h1 {
-        font-size: 3.5em !important;
+        font-size: 3em !important;
     }
 
     h2 {
@@ -222,7 +222,7 @@ h2 {
 
     /* targeting between md and lg*/
     header .h1 {
-        font-size: 2.5em !important;
+        font-size: 2.3em !important;
     }
 
     header h2 {
@@ -233,7 +233,7 @@ h2 {
 
 @media only screen and (max-width: 575px) {
     header .h1 {
-        font-size: 2.5em !important;
+        font-size: 2.3em !important;
         ;
     }
 
