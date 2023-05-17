@@ -40,7 +40,7 @@ if (fileName === "Organisers.html") {
         "mailto:aleksandar.jovanovic@bestnis.rs",
         "https://www.linkedin.com/in/4aleksandar-jovanovic"
     ));
-    organisers.push(new Organiser("Petra Novaković", "Corporate-relations Responsible",
+    organisers.push(new Organiser("Petra Novaković", "Corporate relations Responsible",
         "mailto:petra.novakovic@bestnis.rs",
         "https://www.linkedin.com/in/petra-novakovi%C4%87-aaab13270"
     ));
