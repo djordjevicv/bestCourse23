@@ -123,9 +123,10 @@ button:focus,
         font-size: 3rem;
         font-weight: 500;
     }
-        .nav-item:last-of-type {
-            font-size: 2.5rem;
-        }
+
+    .nav-item:last-of-type {
+        font-size: 2.5rem;
+    }
 }
 
 
@@ -208,11 +209,11 @@ h2 {
 
 @media only screen and (max-width: 1199px) {
     header .h1 {
-        font-size: 3.5em !important;
+        font-size: 3em !important;
     }
 
     h2 {
-        font-size: 2rem !important;
+        font-size: 1.9rem !important;
         ;
     }
 }
@@ -221,10 +222,10 @@ h2 {
 
     /* targeting between md and lg*/
     header .h1 {
-        font-size: 2.5em !important;
+        font-size: 2.3em !important;
     }
 
-    h2 {
+    header h2 {
         font-size: 1.3rem !important;
         ;
     }
@@ -232,11 +233,11 @@ h2 {
 
 @media only screen and (max-width: 575px) {
     header .h1 {
-        font-size: 2.5em !important;
+        font-size: 2.3em !important;
         ;
     }
 
-    h2 {
+    header h2 {
         font-size: 1.3rem !important;
         ;
     }
@@ -247,9 +248,7 @@ h2 {
         font-size: 2.3em !important;
     }
 
-    h2 {
-        
-    }
+    h2 {}
 }
 
 /*WHEN, WHERE*/
@@ -288,8 +287,9 @@ h2 {
 .movingImagesContainer {
     position: relative;
     height: 30vh;
-animation: ease-in-out floating 3s infinite;
+    animation: ease-in-out floating 3s infinite;
 }
+
 /*
 VRLO VAZAN NOTE!!!
 Imam jedan imageContainerDiv cija je pozicija relativna, on mi diktira zauzece prostora movingImagesContainer-a,
@@ -318,9 +318,7 @@ ostala dva u sekciji ce biti apsolutno pozicionirani
     top: 40%;
 }
 
-.imageContainer {
-  
-}
+.imageContainer {}
 
 .imageContainerDiv-2 .imageContainer {
     rotate: -20deg;
@@ -350,9 +348,10 @@ ostala dva u sekciji ce biti apsolutno pozicionirani
     object-fit: cover;
 }
 
-.paragraf-sa-slikom p{
+.paragraf-sa-slikom p {
     margin-top: 5rem;
 }
+
 .btn {
     background: var(--purple);
     color: var(--white);
@@ -511,10 +510,11 @@ h2:not(header h2) {
 
 
 /* CARDS */
-.card{
+.card {
     background: var(--blue);
 }
-.card:nth-of-type(1){
+
+.card:nth-of-type(1) {
     background: var(--purple);
 }
 
@@ -696,8 +696,9 @@ footer img {
         width: 80px;
     }
 }
+
 @media only screen and (max-width:767px) {
-    footer .container .row div:nth-of-type(2){
+    footer .container .row div:nth-of-type(2) {
         margin-bottom: 12px;
     }
 }
