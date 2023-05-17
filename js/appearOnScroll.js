@@ -29,4 +29,5 @@ function checkSlide() {
     });
 }
 
+checkSlide();
 window.addEventListener('scroll', debounce(checkSlide));

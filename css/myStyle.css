@@ -338,7 +338,7 @@ ostala dva u sekciji ce biti apsolutno pozicionirani
     height: 100%;
     width: 100%;
     background: linear-gradient(10deg, var(--gray), var(--purple));
-    opacity: 0.7;
+    opacity: 0.45;
     z-index: 1000;
     display: block;
     content: "";
@@ -524,7 +524,7 @@ h2:not(header h2) {
 }
 
 .card-img-top {
-    width: 40%;
+    width: 100%;
     max-width: 7rem;
 }
 
@@ -695,6 +695,11 @@ footer img {
 
     #BEST-logo {
         width: 80px;
+    }
+}
+@media only screen and (max-width:767px) {
+    footer .container .row div:nth-of-type(2){
+        margin-bottom: 15px;
     }
 }
 
