@@ -7,7 +7,7 @@
     --blue: #1F456C;
     --yellow: #DBC88A;
 
-    --purple: #8640aa;
+    --purple: #794895;
     --purpleD1: #4b156a;
 
     --white: #CDC7D1;
@@ -50,6 +50,13 @@ button:focus,
     opacity: 1;
     scale: 1;
     transform: translateX(0%) scale(1);
+}
+
+.divider {
+   
+}
+.divider img{
+ max-width: 100%;   
 }
 
 /*NAVIGATION*/
@@ -186,7 +193,7 @@ h2 {
     position: relative;
 }
 
-#dynamicElement img {
+#dynamicElement #saturnMagla {
     position: absolute;
     animation: ease-in-out floating 3s infinite;
 }
@@ -195,7 +202,16 @@ h2 {
     position: relative !important;
     width: 100%;
 }
+.star{
+    position: absolute;
+    width: 50px;
+}
+.star1{
 
+}
+.star2{
+    left: 0px;
+}
 #raketa {
     width: 100px;
     z-index: 100;
@@ -419,6 +435,9 @@ h2:not(header h2) {
     font-size: 2.8rem;
 }
 
+#countdown-section a{
+    
+}
 #apply-now-button {
     max-width: 300px;
     font-size: 1.5rem;
@@ -656,15 +675,25 @@ h2:not(header h2) {
 
 /*FOOTER*/
 footer {
-    background: var(--gray);
+    position: relative;
+    background: var(--purple);
+}
+.footerBackground{
+    position: relative;
+    max-width: 100vw;
+    
+    z-index: -1;
+}
+.footerBackground img{
+    width: 100%;
 }
 
-footer img {
+#logo-container img {
     width: 120px;
 }
 
-#BEST-logo {
-    width: 100px;
+#BEST-logo, #logo-container img:nth-of-type(3) {
+    width: 95px !important;
 }
 
 #logo-container a {
@@ -688,13 +717,7 @@ footer img {
 }
 
 @media only screen and (max-width:575px) {
-    footer img {
-        width: 120px;
-    }
-
-    #BEST-logo {
-        width: 80px;
-    }
+    
 }
 
 @media only screen and (max-width:767px) {
