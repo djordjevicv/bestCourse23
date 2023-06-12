@@ -44,7 +44,7 @@ if (fileName === "Organisers.html") {
         "mailto:petra.novakovic@bestnis.rs",
         "https://www.linkedin.com/in/petra-novakovi%C4%87-aaab13270"
     ));
-    organisers.push(new Organiser("Jelena Stefanović", "Media Responsible",
+    organisers.push(new Organiser("Jelena Stojanović", "Media Responsible",
         "mailto:jelena.stojanovic@bestnis.rs",
         "https://www.linkedin.com/in/jelena-stojanovi%C4%87/"
     ));
@@ -82,7 +82,7 @@ else {
         "mailto:petra.novakovic@bestnis.rs",
         "https://www.linkedin.com/in/petra-novakovi%C4%87-aaab13270"
     ));
-    organisers.push(new Organiser("Jelena Stefanović", "Odgovorna za društvene medije",
+    organisers.push(new Organiser("Jelena Stojanović", "Odgovorna za društvene medije",
         "mailto:jelena.stojanovic@bestnis.rs",
         "https://www.linkedin.com/in/jelena-stojanovi%C4%87/"
     ));
