@@ -47,6 +47,7 @@ h2 {
     padding-bottom: 1rem;
     width: 300px;
     transition: all 0.2s;
+    box-shadow: 3px 2px 5px 0.1px var(--purpleD1), 0px 1px 3px 0px var(--purpleD1);
 }
 
 .card:hover {
