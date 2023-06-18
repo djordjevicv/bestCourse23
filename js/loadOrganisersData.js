@@ -86,7 +86,7 @@ else {
         "mailto:jelena.stojanovic@bestnis.rs",
         "https://www.linkedin.com/in/jelena-stojanovi%C4%87/"
     ));
-    organisers.push(new Organiser("Đorđe Stojiljković", "Odgovoran za društvene aktivnosti",
+    organisers.push(new Organiser("Đorđe Veličković", "Odgovoran za društvene aktivnosti",
         "mailto:djordje.velickovic@bestnis.rs",
         "https://www.linkedin.com/in/đorđe-veličković-b1762a276"
     ));
