@@ -660,10 +660,13 @@ h2:not(header h2) {
 }
 
 .logos {
+    display: flex;
+    flex-wrap: wrap;
     overflow-x: hidden;
     white-space: nowrap;
     user-select: none;
     position: relative;
+    max-width: 100%;
 }
 
 /*.logos::before{
@@ -676,15 +679,11 @@ h2:not(header h2) {
     background: linear-gradient(to left, rgba(0,0,0,0), var(--gray));
     z-index: 10;
 }*/
-.slider {
-    white-space: nowrap;
-    transform: translateX(50%);
-    animation: scroll 15s infinite linear;
-}
 
-.slider img {
-    width: 250px;
-    padding: 0 3rem;
+.logos img {
+    width: 200px;
+    object-fit: cover;
+    padding: 20px;
 }
 
 .slider.active {
