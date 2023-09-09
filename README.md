@@ -19,11 +19,7 @@ Teaching participants the principles and practices of UX design, developing desi
 [Live preview](https://djordjevicv.github.io/bestCourse23/) 👈🏻
 
 ## My involvement: 
-•   Planned and executed the 7 days long international academic summer BEST Course Uxperience The Design: Mastering User Experience,
-     visited by 22 participants from 12 different European countries, together with the rest of the event’s Core Team.
-•   Designed, developed and maintained the event’s official website visited by dozens of students, university and company representatives
-    using Bootstrap, Javascript, CSS, HTML5 and Git. 
-•   Worked closely with the event’s Design Responsible and design team on improving the UX aspects of the website, 
-    as well as designing and updating the UI elements.
-•   Established the official Discord server of the event, enabling organizers, participants and lectures to exchange experiences and network before 
-     and after the event.
+- Planned and executed the event as its IT & Logistics Responsible, together with the rest of the event’s Core Team.
+- Designed, developed and maintained the event’s official website visited by dozens of students, university and company representatives using Bootstrap, Javascript, CSS, HTML5 and Git.
+- Worked closely with the event’s Design Responsible and design team on improving the UX aspects of the website, as well as designing and updating the UI elements.
+- Established the official Discord server of the event, enabling organizers, participants and lectures to exchange experiences and network before and after the event.
