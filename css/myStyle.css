@@ -458,7 +458,7 @@ h2:not(header h2) {
 }
 #apply-now-button {
     max-width: 300px;
-    font-size: 1.5rem;
+    font-size: 1.225rem;
     border-radius: 20px;
     background: linear-gradient(45deg, var(--grayL2), var(--purple));
     border: none;
@@ -484,7 +484,7 @@ h2:not(header h2) {
     h2:not(header h2) {}
 
     #apply-now-button {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -512,7 +512,7 @@ h2:not(header h2) {
     }
 
     #apply-now-button {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
 
